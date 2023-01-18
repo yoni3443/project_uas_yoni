@@ -2,8 +2,8 @@ import 'dart:ffi';
 import 'dart:math';
 // import 'package:push_notification/push_notification.dart';
 import 'package:flutter/material.dart';
-import 'package:project_uas/pages/home/wrapper.dart';
-import 'package:project_uas/service/service_app.dart';
+import 'package:uas_yoni/pages/home/wrapper.dart';
+import 'package:uas_yoni/service/service_app.dart';
 import 'package:push_notification/push_notification.dart';
 
 import '../../model/list_users_model.dart';
@@ -243,7 +243,7 @@ class _TransferState extends State<Transfer> {
                   color: const Color.fromARGB(255, 114, 142, 228),
                   child: const Center(
                     child: Text(
-                      'Copyright @2023 By James Loro',
+                      'Copyright @2023 By I Wayan Yoni Maheswara',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),

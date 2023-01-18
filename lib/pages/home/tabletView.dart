@@ -230,7 +230,7 @@ class _TabletViewState extends State<TabletView> {
                                   Text('Nasabah',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold)),
-                                  Text('James Pieter Loro'),
+                                  Text('I Wayan Yoni Maheswara'),
                                   Text('Total Saldo Anda :',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold)),

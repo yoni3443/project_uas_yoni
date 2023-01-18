@@ -34,7 +34,7 @@ class _RegisterPageState extends State<RegisterPage> {
               children: <Widget>[
                 Container(
                   child: Image(
-                    image: AssetImage('assets/img/logo.png'),
+                    image: AssetImage('images/logo.png'),
                     width: 200,
                     height: 200,
                   ),
@@ -196,7 +196,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 ),
                 Container(
                   child: Center(
-                      child: Text('Copyright @2023 By James Pieter Loro',
+                      child: Text('Copyright @2023 By I Wayan Yoni Maheswara',
                           style: TextStyle(fontWeight: FontWeight.bold))),
                   width: double.infinity,
                   height: 50.0,

@@ -1,7 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:project_uas/service/service_app.dart';
+import 'package:uas_yoni/service/service_app.dart';
 
 import '../../model/list_users_model.dart';
 import '../../model/tombol.dart';
@@ -86,6 +86,13 @@ class _MobileViewState extends State<MobileView> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    Container(
+                      child: Image(
+                        image: AssetImage('images/yoni.jpeg'),
+                        width: 100,
+                        height: 100,
+                      ),
+                    ),
                     Expanded(
                       flex: 3,
                       child: Container(
@@ -94,12 +101,11 @@ class _MobileViewState extends State<MobileView> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Container(
-                              width: 350,
+                              width: 200,
                               padding: const EdgeInsets.all(20.0),
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10.0),
-                                  color:
-                                      const Color.fromARGB(255, 206, 191, 238)),
+                                  color: Color.fromARGB(255, 115, 144, 160)),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -117,13 +123,13 @@ class _MobileViewState extends State<MobileView> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Container(
-                                    width: 350,
+                                    width: 200,
                                     padding: const EdgeInsets.all(20.0),
                                     decoration: BoxDecoration(
                                         borderRadius:
                                             BorderRadius.circular(10.0),
                                         color: const Color.fromARGB(
-                                            255, 206, 191, 238)),
+                                            255, 115, 144, 160)),
                                     child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
@@ -170,7 +176,7 @@ class _MobileViewState extends State<MobileView> {
                                               child: Text(
                                                 'Rp ' + user!.saldo.toString(),
                                                 style: const TextStyle(
-                                                  fontSize: 25,
+                                                  fontSize: 20,
                                                   fontWeight: FontWeight.w400,
                                                 ),
                                               ),
@@ -218,7 +224,7 @@ class _MobileViewState extends State<MobileView> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           tombolkategori(
-                            Icons.money,
+                            Icons.account_balance,
                             'Transfer',
                             () {
                               Navigator.push(
@@ -242,7 +248,7 @@ class _MobileViewState extends State<MobileView> {
                             },
                           ),
                           tombolkategori(
-                            Icons.wallet_membership_outlined,
+                            Icons.wallet,
                             'Penarikan',
                             () {
                               Navigator.push(
@@ -269,7 +275,7 @@ class _MobileViewState extends State<MobileView> {
                       padding: const EdgeInsets.all(20.0),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0),
-                          color: const Color.fromARGB(255, 206, 191, 238)),
+                          color: Color.fromARGB(255, 130, 216, 231)),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -281,7 +287,7 @@ class _MobileViewState extends State<MobileView> {
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                               Text(
-                                '0822-1429-8573',
+                                '0887-301-2862',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 25),
                               ),

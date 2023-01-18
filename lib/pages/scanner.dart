@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
-import 'package:project_uas/pages/home/wrapper.dart';
+import 'package:uas_yoni/pages/home/wrapper.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class QrScanner extends StatefulWidget {

@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:project_uas/pages/home/wrapper.dart';
+import 'package:uas_yoni/pages/home/wrapper.dart';
 
 import '../../model/userpreference.dart';
 import '../../model/list_users_model.dart';
@@ -74,7 +74,7 @@ class _LoginState extends State<Login> {
                   alignment: Alignment.topCenter,
                   padding: const EdgeInsets.only(top: 50.0),
                   child: const Image(
-                    image: AssetImage('assets/img/logo.png'),
+                    image: AssetImage('images/logo.png'),
                     width: 200,
                     height: 200,
                   ),
@@ -239,7 +239,7 @@ class _LoginState extends State<Login> {
                 ),
                 Container(
                   child: const Center(
-                      child: Text('Copyright @2023 By James Loro',
+                      child: Text('Copyright @2023 By I Wayan Yoni Maheswara',
                           style: TextStyle(fontWeight: FontWeight.bold))),
                   width: double.infinity,
                   height: 50.0,

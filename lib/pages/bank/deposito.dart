@@ -174,7 +174,7 @@ class _DepositoState extends State<Deposito> {
                   height: 50.0,
                   color: const Color.fromARGB(255, 114, 142, 228),
                   child: const Center(
-                      child: Text('Copyright @2023 By James Loro',
+                      child: Text('Copyright @2023 By I Wayan Yoni Maheswara',
                           style: TextStyle(fontWeight: FontWeight.bold))),
                 ),
               ],

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
-import 'package:project_uas/model/list_users_model.dart';
-import 'package:project_uas/pages/home/mobileView.dart';
-import 'package:project_uas/pages/home/tabletView.dart';
-import 'package:project_uas/pages/login/login.dart';
-import 'package:project_uas/service/service_app.dart';
+import 'package:uas_yoni/model/list_users_model.dart';
+import 'package:uas_yoni/pages/home/mobileView.dart';
+import 'package:uas_yoni/pages/home/tabletView.dart';
+import 'package:uas_yoni/pages/login/login.dart';
+import 'package:uas_yoni/service/service_app.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 
@@ -84,27 +84,8 @@ class _WrapperState extends State<Wrapper> {
                   return MobileView(myUser: _mod[0]);
                 }
               }),
-              bottomNavigationBar: BottomNavigationBar(
-                backgroundColor: Colors.grey,
-                type: BottomNavigationBarType.fixed,
-                selectedItemColor: Colors.blue[700],
-                selectedFontSize: 13,
-                unselectedFontSize: 13,
-                iconSize: 30,
-                // ignore: prefer_const_literals_to_create_immutables
-                items: [
-                  const BottomNavigationBarItem(
-                    label: "Setting",
-                    icon: Icon(Icons.settings),
-                  ),
-                  const BottomNavigationBarItem(
-                    label: "Profile",
-                    icon: Icon(Icons.person),
-                  ),
-                ],
-              ),
               floatingActionButton: FloatingActionButton(
-                backgroundColor: const Color(0xFF1C2474),
+                child: Icon(Icons.qr_code_scanner_sharp),
                 onPressed: () {
                   Navigator.pushReplacement(
                     context,
@@ -113,14 +94,61 @@ class _WrapperState extends State<Wrapper> {
                     ),
                   );
                 },
-                elevation: 4.0,
-                child: Container(
-                  margin: const EdgeInsets.all(15.0),
-                  child: const Icon(Icons.qr_code_scanner),
-                ),
               ),
               floatingActionButtonLocation:
                   FloatingActionButtonLocation.centerDocked,
+              bottomNavigationBar: BottomAppBar(
+                color: Colors.blue,
+                shape: CircularNotchedRectangle(),
+                notchMargin: 10,
+                child: Container(
+                  height: 60,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      MaterialButton(
+                        padding: EdgeInsets.only(left: 100),
+                        minWidth: 40,
+                        onPressed: () {},
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.settings, color: Colors.white),
+                            Text(
+                              'Settings',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.0,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      MaterialButton(
+                        padding: EdgeInsets.only(right: 100),
+                        minWidth: 40,
+                        onPressed: () {},
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.account_circle_rounded,
+                                color: Colors.white),
+                            Text(
+                              'Profile',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12.0,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             );
           } else {
             return const Center(

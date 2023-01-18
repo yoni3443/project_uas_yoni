@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:project_uas/service/service_app.dart';
+import 'package:uas_yoni/service/service_app.dart';
 import 'package:push_notification/push_notification.dart';
 
 import '../../model/list_users_model.dart';
@@ -177,7 +177,7 @@ class _PenarikanState extends State<Penarikan> {
                 ),
                 Container(
                   child: const Center(
-                      child: Text('Copyright @2023 By James Loro',
+                      child: Text('Copyright @2023 By I Wayan Yoni Maheswara',
                           style: TextStyle(fontWeight: FontWeight.bold))),
                   width: double.infinity,
                   height: 50.0,
